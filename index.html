@@ -25,7 +25,7 @@
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2c3d51" />
 		<meta name="msapplication-TileColor" content="#fbf9f6" />
 		<meta name="theme-color" content="#fbf9f6" />
-		<title>Looptap - A minimal game to waste your time</title>
+		<title>Looptap - 消磨时间的小游戏</title>
 
 		<link href="/style.css" rel="stylesheet" />
 		<script defer src="/vue.min.js"></script>
@@ -101,30 +101,12 @@
 					/>
 				</svg>
 			</div>
-			<a
-				id="shareBtn"
-				v-bind:href="'https://twitter.com/intent/tweet?url=https%3A%2F%2Flooptap.vasanthv.com%2F&text=Beat%20my%20score%3A%20'+score+'%0aLooptap%20-%20a%20minimal%20game%20to%20waste%20your%20time.&hashtags=looptap'"
-				v-if="['stopped', 'started'].includes(state)"
-				target="_blank"
-				v-bind:class="state === 'started' ? 'hide' : ''"
-			>
-				Share your score
-			</a>
 			<div id="about" v-if="state === 'init'">
 				Looptap is made by
 				<a href="https://twitter.com/vsnthv" target="_blank">Vasanth</a>
 				<br />
-				<a
-					href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-					class="twitter-share-button"
-					data-text="Looptap - a minimal game to waste your time."
-					data-url="https://looptap.vasanthv.com"
-					data-via="vsnthv"
-					data-hashtags="looptap"
-					data-show-count="false"
-					>Tweet</a
-				>
-				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				Translated by
+				<a href="https://github.com/WorldHim" target="_blank">WorldHim</a>
 			</div>
 		</section>
 	</body>
